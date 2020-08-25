@@ -1,0 +1,60 @@
+{
+	"name" : "sasedev/hidden-entity-type-bundle",
+	"description" : "Hidden field for Symfony entities. (initial fork from https://github.com/shapecode/hidden-entity-type-bundle)",
+	"keywords" : [
+		"form",
+		"entity",
+		"hidden",
+		"symfony",
+		"sasedev"
+	],
+	"type" : "symfony-bundle",
+    "homepage": "https://github.com/sasedev/hidden-entity-type-bundle",
+    "support": {
+        "email": "sinus@sasedev.net",
+        "issues": "https://github.com/sasedev/hidden-entity-type-bundle/issues"
+    },
+	"license" : "MIT",
+    "authors": [
+        {
+            "name": "SALAH Abdelkadeur Seifeddine",
+            "homepage": "https://sasedev.net",
+            "email": "sinus@sasedev.net"
+        }
+    ],
+	"config" : {
+		"bin-dir" : "bin",
+		"component-dir" : "vendor",
+		"preferred-install" : {
+			"*" : "dist"
+		},
+		"process-timeout" : 1200,
+		"sort-packages" : true
+	},
+	"autoload" : {
+		"psr-4" : {
+			"" : "src"
+		}
+	},
+	"autoload-dev" : {
+		"psr-4" : {
+			"" : "tests"
+		}
+	},
+	"require" : {
+		"php": ">=7.2",
+		"doctrine/persistence": "^2.0",
+		"symfony/config": "^5.1",
+		"symfony/dependency-injection": "^5.1",
+		"symfony/form": "^5.1",
+		"symfony/http-kernel": "^5.1",
+		"webmozart/assert": "^1.9"
+	},
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
